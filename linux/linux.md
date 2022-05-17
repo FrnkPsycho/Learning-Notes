@@ -9,8 +9,6 @@ Modified: 2022-04-13 19:38:22 +0800
 
 通常服务器使用 LAMP（Linux + Apache + MySQL + PHP）或 LNMP（Linux + Nginx+ MySQL + PHP）
 
-
-
 开机流程
 
 ![](../media/学习笔记-linux-image1.png){width="5.0in" height="1.9583333333333333in"}
@@ -24,8 +22,6 @@ init 程序首先是需要读取配置文件 /etc/inittab
 在Windows叫做"服务"（service），在Linux就叫做"守护进程"（daemon）
 
 Linux允许为不同的场合，分配不同的开机启动程序，这就叫做"运行级别"（runlevel）。也就是说，启动时根据"运行级别"，确定要运行哪些程序。
-
-
 
 Linux系统有7个运行级别(runlevel)：
 -   运行级别0：系统停机状态，系统默认运行级别不能设为0，否则不能正常启动
@@ -1025,5 +1021,4 @@ tmux ls
 
 
 alias short_name="FULL COMMAND"
-
 
