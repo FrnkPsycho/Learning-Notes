@@ -21,7 +21,6 @@ BigInt `1729371927123123123123123123123123n`
 八进制 `0o377`  
 
 
-
 `number.toFixed(n)` 保留n位小数
 
 `number.toString(base)` base为进制数 36最大
@@ -31,8 +30,6 @@ BigInt `1729371927123123123123123123123123n`
 `isFinite()` 将参数转换为数字，如果是常规数字返回true
 
 `isNaN()`参数是否为NaN 值"NaN" 是独一无二的，它不等于任何东西，包括它自身  
-
-
 
 `parseInt('', base)` `parseFloat('')`
 
@@ -64,8 +61,6 @@ BigInt `1729371927123123123123123123123123n`
 
 `str.slice(start, end)`
 
-
-
 ## 数组
 
 `let arr = []`
@@ -73,7 +68,6 @@ BigInt `1729371927123123123123123123123123n`
 `arr[]` or `arr.at()`后者可以倒数
 
 `arr[i]()` 调用arr[i]函数  
-
 
 
 js中的数组相当于双向队列(deque)
