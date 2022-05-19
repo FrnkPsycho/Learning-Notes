@@ -38,11 +38,13 @@
 
 `[-number]`只显示n项 `--pretty=oneline --graph` 以ascii码展示，一行输出一个commit
 
+`git show <commit>` 
+
 
 
 `git reset [--hard] <commit>` 
 
-`<commit>` ：`HEAD`表示当前版本 `HEAD^`表示上个版本 `HEAD^^`上上个 `HEAD~n` 前n个版本
+**`<commit>` ：`HEAD`表示当前版本 `HEAD^`表示上个版本 `HEAD^^`上上个 `HEAD~n` 前n个版本**
 
 
 
@@ -94,11 +96,109 @@
 TODO/  // 忽略任何目录下名为TODO的文件夹
 ```
 
+## git 分支
 
+`git branch [-r]` 显示当前项目所有分支 `-r`：远程分支
+
+`git branch <name>` 创建分支
+
+`git checkout [-b] <name>` 切换分支
+
+`git rev-parse <branch>` 查看分支SHA值 
+
+### 分支合并
+
+切换到主分支，用`git merge <name>`合并分支到当前分支。
+
+分支合并冲突：
+
+- 手动解决冲突
+
+    去掉 `<<<<<<` / `=======` / `>>>>>>` 分割线再进行commit
+
+- 放弃合并
+
+    `git merge --abort` 放弃合并回滚改动
+
+- mergetool
+
+### 分支推送
+
+`git push origin <branch>` 将branch推送到远程origin分支
+
+`git push -u origin master` 当远程库为空时，第一次将master推送到origin加上-u参数可以将这两个分支联系起来，之后直接`git push`即可
+
+`git clone`下来的库只能看到master分支，想要在别的分支上开发就要创建origin的其他分支：`git checkout -b <new> origin/<new>` 
+
+`git pull` `git branch --set-upstream-to=origin/<branch> <branch>`
+
+### 删除分支
+
+`git branch -d <branch>` 删除分支
+
+`git push origin --delete <branch>` 删除远程分支
+
+### 重命名分支
+
+`git branch -m <old> <new>`
+
+```shell
+git branch -m oldBranchName newBranchName   # 将本地的分支进行重命名
+git push origin newBranchName               # 将新的分支推送到远程        
+git push --delete origin oldBranchName      # 删除远程的旧的分支 
+```
+
+### 分支工作流
+
+1. master分支应该是最稳定的，也就是仅用来发布新版本，平时不能直接在上面进行操作，应该保存在远程。
+
+2. 短期分支是我们干活的分支，短期分支可以不用上传到远程，当我们完成了bug的修复，新功能的开发时才需要合并到主分支上。
+
+3. 多使用分支来进行开发工作。
+
+## 交互式暂存
+
+`git add -i` 进入交互式暂存界面
+
+`status`
+
+`update` 暂存
+
+`revert` 取消暂存
+
+`diff` similar to `git diff --cached` 查看已暂存内容的区别
+
+`patch` 补丁（暂存特定部分）
+
+## 贮存与清理
+
+`git stash` 想切换分支又不想放弃修改，将当前工作区入栈
+
+`git stash pop`/`git stash apply [stash@{n}]` 恢复之前的工作区
+
+`git stash list` 所有stash
+
+## 清理工作目录
+
+`git clean [-f] [-d] [--dry-run/-n] [-i]` 
+
+删除所有未被跟踪的文件 `-f`强制 `-d`文件夹 `--dry-run/-n` 提示会删除什么 `-i` 交互式
+
+默认不删除忽略文件
+
+## 搜索
+
+`git grep <pattern>`
+
+`git log [-S/-L]`
+
+## 子模块
+
+maybe too advanced...
 
 ## TO BE ORGANIZED
 
-工作区（Working Directory）
+工区（Working Directory）
 
 就是你在电脑里能看到的目录
 
@@ -136,21 +236,11 @@ git restore <file>
 
 将工作区里的修改撤销（文件意义上的）
 
- 
-
-rm <file> 从工作区删除文件
-
-git rm <file>  工作区与版本库不相同 从版本库中删除这个文件 
-
- 
-
 命令git rm用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，**但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。**
 
  
 
-git remote add origin git@github.com:<remotesshname> 添加远程库
 
-git push -u origin master 把当前分支master推送到远程
 
 由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
 
@@ -174,7 +264,7 @@ git branch 查看分支
 
 git merge <branch> 合并指定分支到当前分支
 
-git branch -d <> 删除分支
+
 
  
 
