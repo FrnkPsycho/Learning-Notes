@@ -1,6 +1,6 @@
 # Linux
 
-## Basic
+## 基础
 
 通常服务器使用 LAMP（Linux + Apache + MySQL + PHP）或 LNMP（Linux + Nginx+ MySQL + PHP）
 
@@ -33,7 +33,30 @@ Linux系统有7个运行级别(runlevel)：
 
 usr 是 unix shared resources(共享资源) 的缩写，这是一个非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似于 windows 下的 program files 目录。
 
+- `/bin` - 基本命令二进制文件
 
+- `/sbin` - 基本的系统二进制文件，通常是root运行的
+
+- `/dev` - 设备文件，通常是硬件设备接口文件
+
+- `/etc` - 主机特定的系统配置文件
+
+- `/home` - 系统用户的主目录
+
+- `/lib` - 系统软件通用库
+
+- `/opt` - 可选的应用软件
+
+- `/sys` - 包含系统的信息和配置([第一堂课](https://missing-semester-cn.github.io/2020/course-shell/)介绍的)
+
+- `/tmp` - 临时文件( `/var/tmp` ) 通常重启时删除
+
+- `/usr/` - 只读的用户数据
+    - `/usr/bin` - 非必须的命令二进制文件
+    - `/usr/sbin` - 非必须的系统二进制文件，通常是由root运行的
+    - `/usr/local/bin` - 用户编译程序的二进制文件
+
+- `/var` -变量文件 像日志或缓存
 
 $ 表示非root用户
 
@@ -560,6 +583,42 @@ SIGHUP close all when exiting terminal
 `<C-b> p/n` prev/next
 
 `<C-b> "/%` horizonal/vertical
+
+
+
+## 依赖管理
+
+### 版本控制
+
+为构建指定项目需要依赖的版本（或者某个范围的版本）
+
+#### 版本号
+
+版本号常用标准：[语义版本号](https://semver.org/)
+
+`主版本号.次版本号.补丁号`
+
+- 如果新的版本没有改变 API，请将补丁号递增；
+- 如果您添加了 API 并且该改动是向后兼容的，请将次版本号递增；
+- 如果您修改了 API 但是它并不向后兼容，请将主版本号递增。
+
+Python就是很好的例子，Python2和Python3相互不兼容，Python3.10的代码可能3.7不能运行
+
+#### 锁文件 lockfile
+
+列出了当前每个依赖所对应的具体版本号（或者大于某个版本号`>=`之类）
+
+或者也可以将依赖直接拉取到项目中（*vendoring*）
+
+### 持续集成系统 CI
+
+当代码变动时，自动运行的一系列过程。
+
+市面上有如 Travis CI、Azure Pipelines 、 GitHub Actions等工具。
+
+在代码仓库中添加一个文件，描述当前仓库发生任何修改时，应该如何应对，如：如果有人提交代码，执行测试
+
+`Github Pages`为例，每次 `master` 更新时，执行博客应用重新构建渲染。
 
 ## Shell命令记录
 
