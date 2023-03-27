@@ -1,17 +1,7 @@
 # Word Learning
 
-Created: 2021-09-02 19:53:00 +0800
-
-Modified: 2021-09-06 08:54:00 +0800
-
----
-
-
 剪贴簿
-
 win + v
-
-
 
 上一页ctrl+pgup
 
@@ -107,8 +97,6 @@ win + v
 
 选项------首页不同
 
-
-
 1.  自定义快速访问工具栏 word左上角
 
 2.  查找和替代 ctrl+f ctrl+h
@@ -189,7 +177,9 @@ word表格
 
 文字方向
 
-阿拉伯数字 全角半角shift+space１２３４５12345
+阿拉伯数字 全角半角shift+space
+
+１２３４５12345
 
 
 
@@ -241,59 +231,42 @@ shift+tab------提高层次
 
 图表标号（即图1-1这种）
 
-![邯 件 市 阅 视 图 希 助 0 作 说 明 搜 索 引 用 2 孺 入 衷 目 录 」 于 新 去 褡 攫 捱 入 引 文 卜 帛 目 、 0 交 叉 引 用 气 信 息 索 引 文 与 书 目 ](../media/学习笔记-Word-Learning-image10.png){width="4.491666666666666in" height="1.5083333333333333in"}
+![](../media/学习笔记-Word-Learning-image10.png){width="4.491666666666666in" height="1.5083333333333333in"}
 
-
-
-![注 到 号 0 包 自 号 （ 0 莖 起 达 样 式 （ E) 标 题 1 标 签 （ 0 便 分 隔 ． 位 篱 旧 ： 所 选 项 0 下 方 囗 从 注 中 津 除 标 签 示 例 ： 衮 1, 衮 格 1 一 A 除 标 Q ） [二二二@」 自 动 届 入 注 （ ](../media/学习笔记-Word-Learning-image11.png){width="5.558333333333334in" height="2.8333333333333335in"}
-
-
+![](../media/学习笔记-Word-Learning-image11.png){width="5.558333333333334in" height="2.8333333333333335in"}
 
 crtl+G 跳转
 
 f9 更新
 
-
-
 交叉引用
 
 插入表目录
 
-
-
 图表目录
-
 
 
 分节符号 将一个文件分成不同章节
 
-![引 用 视 图 帮 助 分 贞 符 分 贞 符 們 己 一 灾 适 中 与 下 一 页 开 始 的 分 烂 符 （ 0 示 劣 咩 兰 筲 后 面 的 文 字 将 从 下 自 动 嵝 行 符 (D 0 分 隔 网 贞 上 的 对 象 周 围 的 文 才 。 娅 分 题 注 文 才 与 止 文 。 下 一 一 页 ） 陲 入 分 节 笞 开 在 下 一 贞 上 开 始 连 （ 0 ） 庙 入 分 茄 得 艿 在 同 一 灾 上 开 始 偶 贞 囵 奇 贞 但 ） 入 分 廾 在 下 一 奇 页 上 ](../media/学习笔记-Word-Learning-image12.png){width="3.466666666666667in" height="5.825in"}
+![](../media/学习笔记-Word-Learning-image12.png){width="3.466666666666667in" height="5.825in"}
 
 
 
-![． 过 目 囗 冂 里 击 下 万 示 使 用 钮 可 应 方 框 凶 三 堆 自 动 自 定 义 圓 生 5 磅 应 于 （ 0 一 仅 不 ． 除 外 所 0 贞 ](../media/学习笔记-Word-Learning-image13.png){width="5.958333333333333in" height="5.25in"}
+![](../media/学习笔记-Word-Learning-image13.png){width="5.958333333333333in" height="5.25in"}
 
 分完节后就可以单独设置
 
+![](../media/学习笔记-Word-Learning-image14.png){width="6.166666666666667in" height="3.1083333333333334in"}
 
-
-![分 節 符 號 封 而 章 節 1 ( 無 頁 鰳 摘 要 章 節 2 ( 字 頁 鰳 目 錄 分 節 符 章 節 3 ( 阿 拉 拍 字 頁 ) ](../media/学习笔记-Word-Learning-image14.png){width="6.166666666666667in" height="3.1083333333333334in"}
-
-
-
-![萸鳳KJ裒國 류도%i目 ](../media/学习笔记-Word-Learning-image15.png){width="3.0083333333333333in" height="1.4583333333333333in"}
+![](../media/学习笔记-Word-Learning-image15.png){width="3.0083333333333333in" height="1.4583333333333333in"}
 
 这个关掉就可以修改前一面的页眉/页脚而不影响后面
 
-
-
 分栏排版
 
-![分 贞 符 符 一 示 分 栏 筲 后 面 的 文 字 将 从 下 自 动 行 符 （ D 分 隔 网 页 上 的 对 象 周 围 的 文 字 。 如 分 题 注 文 才 与 止 文 · 下 一 贞 （ N ） 届 入 分 节 蓓 开 在 下 一 贞 上 开 始 外 何 0 庙 入 分 茄 得 艿 在 同 一 灾 上 开 始 國 0 偶 数 贞 佳 ） 奇 贞 但 ） 入 分 节 蓓 廾 在 下 一 孬 页 上 巳 安 排 小 孩 ． ](../media/学习笔记-Word-Learning-image16.png){width="3.3666666666666667in" height="5.366666666666666in"}
+![](../media/学习笔记-Word-Learning-image16.png){width="3.3666666666666667in" height="5.366666666666666in"}
 
-
-
-![一 栏 0 栏 数 （ N 羊 》 寞 和 间 詎 栏 （ 0 D ： 21 亨 蒔 0 栏 相 等 囵 应用于@）： 本 三 栏 田 间 距 ： 10 3 字 筲 惋 左 （ ） 偏 右 四 ](../media/学习笔记-Word-Learning-image17.png){width="4.408333333333333in" height="4.208333333333333in"}
+![](../media/学习笔记-Word-Learning-image17.png){width="4.408333333333333in" height="4.208333333333333in"}
 
 
 
@@ -313,7 +286,7 @@ f9 更新
 
 比较
 
-![0 0 1 卜 作 世 比 孬 处 《 勺 两 个 版 本 将 多 位 者 餉 订 台 到 一 一 个 义 档 中 。 罡 示 岬 文 ](../media/学习笔记-Word-Learning-image20.png){width="2.066666666666667in" height="2.55in"}
+![](../media/学习笔记-Word-Learning-image20.png){width="2.066666666666667in" height="2.55in"}
 
 
 
@@ -323,7 +296,7 @@ f9 更新
 
 首先先找到开发工具tab
 
-![[ 44 自 定 义 功 能 区 和 盘 快 睫 ． 从 下 列 位 蟊 选 品 令 （ 0 ： 0 自 定 义 功 区 佃 常 用 命 令 保 存 庙 入 分 灾 蓿 和 茄 符 入 批 汪 0 片 目 看 多 个 页 面 日 整 呶 P 甴 找 快 问 工 吴 栏 打 开 打 E 囗 思 和 打 印 中 心 定 义 新 弼 芤 灬 0 复 制 晰 中 改 列 表 级 别 丿 开 T 吴 绘 制 竖 文 事 框 帮 助 凶 雲 切 0 书 法 将 所 选 闪 # 保 存 到 文 不 框 库 新 建 选 顶 卡 （ 新 建 坦 重 命 名 （ M 》 受 0 订 0 自 过 置 囵 - 键 快 方 式 ： 自 定 叟 田 " ． 0 导 ， 导 出 旧 · ](../media/学习笔记-Word-Learning-image21.png){width="4.875in" height="3.95in"}
+!](../media/学习笔记-Word-Learning-image21.png){width="4.875in" height="3.95in"}
 
 
 
@@ -333,7 +306,7 @@ f9 更新
 
 设计模式可以避免输入 调整控件样式 还可以设置placeholder：
 
-![姓 名 ． 」 诘 输 入 姓 名 D 電 話 ： 《 请 输 入 电 话 号 码 〔 无 需 区 位 } 号@ 性 别 ： 〔 巛 囗 月 男 《 巛 囗 月 女 ' 」 生 日 ： 《 巛 诺 输 入 生 日 》 報 名 悌 次 " ](../media/学习笔记-Word-Learning-image23.png){width="3.033333333333333in" height="2.033333333333333in"}
+![](../media/学习笔记-Word-Learning-image23.png){width="3.033333333333333in" height="2.033333333333333in"}
 
 勾选框------属性里面可以设置勾选样式 wingding2里面有方块勾叉
 
@@ -341,10 +314,7 @@ f9 更新
 
 限制编辑：
 
-![帮 助 鬔 作 明 幵 发 工 设 橂 式 XML 映 窗 格 營 報 名 的 棒 球 夏 令 營 就 要 開 打 了 ! 只 要 填 寫 好 以 下 資 料 , 並 附 上 - 張 | 框 可 插 入 照 片 )• 再 將 報 名 表 寄 回 baseballcamp@summer.com 就 号 码 ( 无 需 区 位 ) 共 享 限 制 编 辑 1 · 啗 式 化 限 制 囗 限 制 对 选 定 的 式 设 置 格 式 允 交 中 行 此 类 型 的 旧 不 允 许 任 何 更 改 ( 只 不 允 讦 仕 何 更 ; 只 司 以 斌 更 多 用 户 ... 启 制 护 是 否 准 应 这 些 置 可 以 后 其 关 是 , 制 ](../media/学习笔记-Word-Learning-image24.png){width="5.75in" height="3.425in"}
-
-
-
+![](../media/学习笔记-Word-Learning-image24.png){width="5.75in" height="3.425in"}
 
 
 段落标记
@@ -355,7 +325,7 @@ f9 更新
 
 两者不同
 
-![找 圓 挨 凹 查 找 内 ： AP 替 为 (D ： < < 更 少 圈 搜 半 部 囗 区 分 大 小 巪 （ H 0 全 字 匹 配 (Y) 便 用 通 配 符 隕 囗 囗 同 盲 （ 萸 文 ） 凶 囗 找 词 的 所 式 { 0 ） - 制 表 蓓 田 任 苣 字 母 凹 脱 字 号 〔 R 〕 § 分 节 ， 段石符号@） 分 栏 巛 ） 长 划 线 〔 M 〕 1 / 4 全 角 空 國 短 划 线 无 可 选 分 0 无 宽 北 分 隔 符 〔 逃 ） 锄 主 标 记 形 〔 D 手 动 冲 行 符 圈 手 动 分 页 爪 河 断 连 字 蓓 爪 司 断 空 格 国 可 选 左 字 0 空 白 区 域 〔 殊 格 式 圈 - 不 銀 定 格 式 〔 T) ](../media/学习笔记-Word-Learning-image26.png){width="2.4166666666666665in" height="4.908333333333333in"}
+![](../media/学习笔记-Word-Learning-image26.png){width="2.4166666666666665in" height="4.908333333333333in"}
 
 
 
@@ -363,7 +333,9 @@ f9 更新
 
 **alt+f9 显示变量**
 
-![A 文 4 框 文 1 阝 件 艺 本 字 签 叾 行 、 日 黽 》 田 扌 间 页 脚 页 码 眉 和 页 4 0 晶 自 文 隻 〔 文 档 民 性 圓 櫛 建 基 块 管 理 器 〔 " 樗 斩 选 丙 0 存 到 文 档 伫 〔 S 〕 " ](../media/学习笔记-Word-Learning-image27.png){width="4.325in" height="2.625in"}![URL; Hyperlink If IncludePicture Include Text Index Info Keyword s LastSavedBy Link ListNum MacroButton MergeField Merge Rec Merges eq Next Next If Note Ref NumChars ](../media/学习笔记-Word-Learning-image28.png){width="5.008333333333334in" height="3.6666666666666665in"}
+![](../media/学习笔记-Word-Learning-image27.png){width="4.325in" height="2.625in"}
+
+![](../media/学习笔记-Word-Learning-image28.png){width="5.008333333333334in" height="3.6666666666666665in"}
 
 原理：从excel表格中读取文件路径（  替换成  ）
 
@@ -393,7 +365,7 @@ f9 更新
 
 阶层（大纲级别）
 
-![蕪 選 砸 间 距 （ D 漢 行 和 分 页 旧 中 文 总 对 齐 方 式 ： 左 对 齐 大 级 # 」 （ 2 ． 正 文 文 本 左 右 囗 0 ](../media/学习笔记-Word-Learning-image29.png){width="2.3666666666666667in" height="3.283333333333333in"}
+![](../media/学习笔记-Word-Learning-image29.png){width="2.3666666666666667in" height="3.283333333333333in"}
 
 
 

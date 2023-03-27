@@ -1,84 +1,47 @@
 # html
 
-Created: 2021-11-11 13:53:52 +0800
-
-Modified: 2021-11-11 15:03:30 +0800
-
----
-
-
-<!DOCTYPE html> html5声明
-
+```html
+<!DOCTYPE html> <!--html5声明-->
 <html>
-
 <head>
-
 <meta charset="utf-8">
-
 <title>
-
 <link rel="stylesheet" type="text/css" href=""> 导入css
-
-<style type="test/css">..</>
-
+<style type="test/css">..</style>
 <body>
-
 <h1><h2>----<h6>
-
 <hr> 水平线
-
-<br>
-
-<p>
-
-<img>
-
-<strong> <em>
-
-<kbd>
-
-<abbr title=""> <acronym title="">
-
-<q>
-
-<a>
-
-attributes:
-
-href
-
-id
-
-<ul><ol><li><dl><dt><dd>
+<br> 换行
+<p> 段落
+<img src="">
+<strong> <em> 加粗
+<kbd> 键盘
+<abbr title=""> <acronym title=""> 悬停提示
+<q> 斜体
+<a href=""> 超链接
+<ul><ol><li><dl><dt><dd> 列表
+```
 
 
-
-
-
-html通过<div>/<span>将元素结合
+html通过`<div>`/`<span>`将元素结合
 
 区块元素 内联元素
 
-<div>元素 块级元素 如果与 CSS 一同使用，<div> 元素可用于对大的内容块设置样式属性。
+`<div>`元素 块级元素 
 
-<span>元素 内联元素
+如果与 CSS 一同使用，`<div>` 元素可用于对大的内容块设置样式属性。
 
-
+`<span>`元素 内联元素
 
 html可用<div><span>元素
 
+`&nbsp;` 空格
 
 
 
+## 速查
 
-&nbsp;
-
-
-
-速查
-
-
-
+```html
 <!DOCTYPE html>
 
 <html>
@@ -287,3 +250,4 @@ p {color:blue;}
 
 &#169; 等同于 ©
 
+```

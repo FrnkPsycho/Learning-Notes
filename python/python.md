@@ -1,27 +1,21 @@
 # python
 
-Created: 2021-10-01 09:06:20 +0800
-
-Modified: 2022-05-06 19:15:21 +0800
-
----
-
 
 因为是动态变量 所以想要除出整数得用地板除 //
 
-ord() 字符整数表示
+`ord()` 字符整数表示
 
-chr() 整数字符表示
+`chr()` 整数字符表示
 
-b'string' 每个字符占一个 字节
+`b'string'` 每个字符占一个 字节
 
 1个中文字符经过UTF-8编码后通常会占用3个字节
 
-len() 默认字符数 转换为byte就是字节数
+`len()` 默认字符数 转换为byte就是字节数
 
 
 
-%d %f 等 格式化
+`%d %f` 等 格式化
 
 print('%2d-%02d' % (3, 1))
 
@@ -29,13 +23,15 @@ f string {变量}
 
 {变量名:格式化参数}
 
-s = 3.14 * r ** 2
+`s = 3.14 * r ** 2`
 
->>> print(f'The area of a circle with radius {r} is {s:.2f}')
+`print(f'The area of a circle with radius {r} is {s:.2f}')`
 
 
 
-list [] 可更改 有序
+### list []
+
+可更改 有序
 
 list = [a,b,c]
 
@@ -55,7 +51,9 @@ list.sort() 排序
 
 
 
-tuple () 不可更改 相当于const array[]
+### tuple () 
+
+不可更改 相当于const array[]
 
 只有一个元素时记得添个,
 
@@ -65,89 +63,53 @@ tuple里面的list是可以更改的 类似指针思想
 
 
 
-条件判断
+### dict {} 
 
-if ... ><!= ... :
+字典 键值存储
 
-
-
-elif ....:
-
-
-
-else:
-
-
-
-类型转换
-
-int(a) float(b)
-
-
-
-循环 依次把list/tuple中的元素循环出来
-
-for element in list:
-
-print(element)
-
-
-
-range(数量) 生成0开始的整数序列 0-100就要写101
-
-
-
-while 与c同理
-
-break
-
-continue
-
-
-
-dict {} 字典 键值存储
-
+```py
 d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
 
 d['Mike'] = 90 直接赋值添加
 
 d['Bob'] >>> 75
+```
 
 
 
-判断key存在
+#### 判断key存在
 
-1.  通过in判断
+1. 通过in判断
 
-'Bob' in d >>> True
+    `'Bob' in d `>>> True
 
+2. get()
 
+    `d.get('a')`>>> None
 
-2.  get()
-
-d.get('a') >>> None
-
-d.get('a',-1) >>> -1
+    `d.get('a',-1)`>>> -1
 
 
 
 同样也有pop()
 
-
-
 dict的key不可变
 
 
 
-set 集合 不能有重复的元素
+### set []
+
+集合
+
+不能有重复的元素
 
 创建一个set 需要提供一个list
 
 全是key不存储value
 
-add()
+`add()`
 
-remove()
+`remove()`
 
 & | 集合可以做逻辑运算
 
@@ -159,9 +121,50 @@ replace()只是新建了一个字符串
 
 
 
-简单函数
 
-abs() max() int() float() str() bool()
+
+### 条件判断
+
+```py
+if ... ><!= ... :
+
+elif ....:
+
+else:
+```
+
+
+
+### 类型转换
+
+`int(a) float(b)`
+
+
+
+### 循环 
+
+依次把list/tuple中的元素循环出来
+
+```py
+for element in list:
+    print(element)
+```
+
+`range(数量)` 生成0开始的整数序列 0-100就要写101
+
+`while 与c同理`
+
+`break`
+
+`continue`
+
+
+
+
+
+## 函数
+
+`abs() max() int() float() str() bool()`
 
 
 
@@ -169,17 +172,18 @@ a = abs 可以给函数起别名 有点像define typedef
 
 
 
-定义函数def
+定义函数`def`
 
-pass 占位符
+`pass` 占位符
 
 
 
-参数检查
+### 参数检查
 
+```py
 isinstance(变量名,(数据类型))
-
 raise TypeError('')
+```
 
 
 
@@ -189,7 +193,9 @@ raise TypeError('')
 
 
 
-默认参数 fn(a,b=2)
+### 默认参数 
+
+`fn(a,b=2)`
 
 没输入b时就是b=2
 
@@ -197,33 +203,37 @@ raise TypeError('')
 
 
 
-可变参数 变量前面加一个*
+### 可变参数
+
+变量前面加一个*
 
 声明和传入参数时都可以加上*
 
 
 
-关键字参数 两个星号**
+### 关键字(Key)参数
+
+两个星号**
 
 可以不传入也可以自动以dict形式传入
-
+```python
 def person(name, age, **kw):
-
-print('name:', name, 'age:', age, 'other:', kw)
+	print('name:', name, 'age:', age, 'other:', kw)
 
 >>> person('Adam', 45, gender='M', job='Engineer')
-
-name: Adam age: 45 other: {'gender': 'M', 'job': 'Engineer'}
-
-
+>>> name: Adam age: 45 other: {'gender': 'M', 'job': 'Engineer'}
+```
 
 
 
-命名关键字参数
+### 命名关键字参数
 
+```py
 def person(name, age, *, city, job):
+	print(name, age, city, job)
+```
 
-print(name, age, city, job)
+
 
 和关键字参数**kw不同，命名关键字参数需要一个特殊分隔符*，*后面的参数被视为命名关键字参数
 
@@ -235,22 +245,22 @@ print(name, age, city, job)
 
 
 
-对于任意函数，都可以通过类似func(*args, **kw)的形式调用它，无论它的参数是如何定义的。
+对于任意函数，都可以通过类似`func(*args, **kw)`的形式调用它，无论它的参数是如何定义的。
 
 
 
 
 
-默认情况下，dict迭代的是key。如果要迭代value，可以用for value in d.values()，如果要同时迭代key和value，可以用for k, v in d.items()。
+默认情况下，dict迭代的是key。如果要迭代value，可以用`for value in d.values()`，如果要同时迭代key和value，可以用`for k, v in d.items()`。
 
-from collections.abc import Iterable
+`from collections.abc import Iterable`
 
 
 
 Python内置的enumerate函数可以把一个list变成索引-元素对，这样就可以在for循环中同时迭代索引和元素本身：
 
 
-
+```
 >>> for i, value in enumerate(['A', 'B', 'C']):
 
 ... print(i, value)
@@ -263,7 +273,7 @@ Python内置的enumerate函数可以把一个list变成索引-元素对，这样
 
 2 C
 
-
+```
 
 
 

@@ -295,7 +295,116 @@ php中的 `$_GET` 数组存有上传的表单内容；
 
 ![](../media/php/image-20220521221408963.png)
 
-php内的HTML表单：
+php内的HTML表单（调用该php自己接收表单）：
 
-`<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">`
+`<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">` 
 
+`htmlspecialchars()` 将特殊字符URLEncode，避免跨站脚本攻击
+
+### 验证表单
+
+- 所有用户输入的变量都要经过 `htmlspecialchars()` 函数！！！
+
+- 使用 `trim()` 函数将不必要的字符（多余空格/制表符/换行符）去掉
+- 使用 `stripslashes()` 函数将反斜杠 `\` 去除
+
+```php
+$name = $email = $gender = $comment = $website = ""; // 变量记得先设为空
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  ...
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+```
+
+### 必填字段
+
+- 定义错误信息变量： `$nameErr = ""`
+
+- 使用 `empty()` 检查是否为空，若为空将错误信息变量赋值： `$nameErr = "Name is Required."`，不为空则将变量通过验证赋值
+- 将错误信息用 `<span>` 元素放在HTML中： `<span class="error">* <?php echo $nameErr;?></span>`
+
+### 字段验证
+
+英文名：
+
+```php
+$name = test_input($_POST["name"]);
+if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+  $nameErr = "Only letters and white space allowed";
+}
+```
+
+邮箱：
+
+```php
+$email = test_input($_POST["email"]);
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  $emailErr = "Invalid email format";
+}
+```
+
+URL:
+
+```php
+$website = test_input($_POST["website"]);
+if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+  $websiteErr = "Invalid URL";
+}
+```
+
+## 时间
+
+`date(format, timestamp)`
+
+```php
+echo "Today is " . date("Y/m/d") . "<br>";
+echo "Today is " . date("l"); // 显示星期几
+&copy; 20xx-<?php echo date("Y");?> // 版权所有年份
+echo "The time is " . date("h:i:sa"); // 时间
+date_default_timezone_set("Asia/Shanghai"); // 设置时区
+
+```
+
+## 文件
+
+### 包含文件
+
+`include` & `require` 
+
+### 文件处理
+
+- `readfile()`
+
+- `fopen(file, mode) or die(string);`
+
+    `r/w/a/x` (`+` 文件开始)
+
+- `fread(fstream, size)` 
+
+- `fclose(fstream)`
+
+- `fgets(fstream)` 读入一行，指针指向下一行
+
+- `fgetc(fstream)` 读入一个字符
+
+- `feof(fstream)`
+
+    ```php
+    while(!feof($myfile)) {
+      echo fgets($myfile) . "<br>";
+    }
+    
+    while(!feof($myfile)) {
+      echo fgetc($myfile);
+    }
+    ```
+
+### 文件上传
