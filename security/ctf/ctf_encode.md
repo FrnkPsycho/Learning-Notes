@@ -1,6 +1,6 @@
 ## 计算机相关编码
 
-[](https://ctf-wiki.org/misc/encode/computer/)
+[original](https://ctf-wiki.org/misc/encode/computer/)
 
 ### ASCII编码
 
